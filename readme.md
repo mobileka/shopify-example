@@ -8,31 +8,31 @@ This is an example application which uses Shopify API to create webhooks
 
 3) Provide the API key and secret of your application (edit the `shopify.php` config file)
 
-4) Run `composer update -o`  
+4) Run `composer update -o`
 
-5) Create a new database, configure database access and run migrations  
+5) Create a new database, configure database access and run migrations
 
-6) Run `artisan serve --port 8080` and you should be able to test the application  
+6) Run `artisan serve --port 8080` and you should be able to test the application
 
 ## Usage
 
-1) Create a development store in the partner's administration interface  
+1) Create a development store in the partner's administration interface
 
-2) Open the application (http://localhost:8080 or whatever you have configured for this) and click "Create a new store"  
+2) Open the application (http://localhost:8080 or whatever you have configured for this) and click "Create a new store"
 
-3) Enter your shop name to form and click "Submit". You will be asked to grant access for the Shopify application  
+3) Provide the store's name and click "Submit". You will be asked to grant access for the Shopify application
 
-4) Once you have created the new store, click to its name  
+4) Once you have created the new store, click to its name
 
-5) Here you can see a list (which is empty right now) of webhooks of the selected store  
+5) Here you can see a list of webhooks of the selected store
 
-6) Click "Create a new webhook", fill the form and click submit  
+6) Click "Create a new webhook", fill the form and click "Submit"
 
 7) You can also remove stores and webhooks
 
 
 ## Known issues
 
-1) webhook topics are not being validated and response exceptions are not being processed properly  
+1) Webhook topics are not being validated and response exceptions are not being processed properly
 
-2) if you delete a store, webhooks of this store won't be deleted (no specification provided for this case)  
+2) If you delete a store, webhooks of this store won't be deleted (no specification provided for this case)
